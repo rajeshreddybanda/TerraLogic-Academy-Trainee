@@ -5,14 +5,18 @@ import './App.css';
 import IncrementComponent, { DecrementComponent } from './IncrementComponent';
 import DataBinding from './DataBindingComponenet';
 import ParentComponent from './ParentComponent';
+import Greeting from './Greetings';
+import ConditionalRendering from './ConditionalRendering';
 function App() {
   return (
     <div className="App">
-        <>
+        {/* <>
       <IncrementComponent/>
       <DecrementComponent/>
       <DataBinding/>
-      <ParentComponent /></>
+      <ParentComponent /></> */}
+      <Greeting isLoggedIn={true} isAuthorised={false}/>
+      <ConditionalRendering isLoggedIn={false}/>
       {/* 
          <ButtonClick /><header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
